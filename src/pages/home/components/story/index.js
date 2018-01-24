@@ -76,18 +76,18 @@ export default class Story extends Component{
 const S = StyleSheet.create({
   box:{
     flexDirection: 'row',
-    height: sz(75),
-    marginLeft: sz(18),
-    marginTop: sz(18),
-    paddingTop: sz(6),
+    height: 75,
+    marginLeft: 18,
+    marginTop: 18,
+    paddingTop: 6,
     // backgroundColor: 'red',
   },
 
   line: {
-    height: sz(45),
-    width: sz(1),
+    height: 45,
+    width: 1,
     backgroundColor: '#979797',
-    marginHorizontal: sz(16),
+    marginHorizontal: 16,
     opacity: 0.21
 
   },
@@ -107,8 +107,8 @@ const S = StyleSheet.create({
   oneStory: {
     justifyContent: 'space-between',
     // backgroundColor: 'grey',
-    marginRight: sz(19),
-    width: sz(45),
+    marginRight: 19,
+    width: 45,
   },
   takePhoto: {
     marginRight: 0,
@@ -116,21 +116,21 @@ const S = StyleSheet.create({
   avatarWrap:{
     justifyContent: 'center',
     alignItems: 'center',
-    width: sz(45),
-    height: sz(45),
+    width: 45,
+    height: 45,
     // shadowColor: '#4055C4',
     // shadowOffset: {width:0,height: -2},
     // shadowRadius: 14,
     // shadowOpacity: 0.14,
   },
   avatar: {
-    width: sz(45),
-    height: sz(45),
-    borderRadius: sz(3.6),
+    width: 45,
+    height: 45,
+    borderRadius: 3.6,
 
   },
   userName: {
-    fontSize: sz(10),
+    fontSize: 10,
     color: '#4E5969',
     textAlign: 'center',
   },

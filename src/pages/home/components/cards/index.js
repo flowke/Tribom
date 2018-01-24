@@ -70,18 +70,18 @@ Card.defaultProps = {
 
 const S = StyleSheet.create({
   cardsList: {
-    marginTop: sz(18),
-    marginHorizontal: sz(18),
+    marginTop: 18,
+    marginHorizontal: 18,
   },
 
   cardBox: {
     height: 100,
-    paddingTop: sz(16),
-    paddingRight: sz(16),
-    paddingBottom: sz(14),
-    paddingLeft: sz(18),
+    paddingTop: 16,
+    paddingRight: 16,
+    paddingBottom: 14,
+    paddingLeft: 18,
     backgroundColor: '#fff',
-    borderRadius: sz(6),
+    borderRadius: 6,
     borderWidth: thinLine,
     borderColor: 'rgba(151,151,151,0.08)',
     shadowColor: '#4F5EA3',
@@ -96,35 +96,35 @@ const S = StyleSheet.create({
     position: 'absolute',
     top: 0,
     right: 0,
-    width: sz(28),
-    height: sz(28),
+    width: 28,
+    height: 28,
     alignItems: 'center',
     justifyContent: 'center',
   },
   avatarWrap: {
-    paddingRight: sz(12),
+    paddingRight: 12,
   },
   avatar: {
-    borderRadius: sz(6),
+    borderRadius: 6,
   },
   userInfo: {
     justifyContent: 'flex-end',
   },
   name: {
-    fontSize: sz(14),
+    fontSize: 14,
     fontWeight: 'bold',
     color: '#4E5969'
   },
   timeWrap: {
-    marginTop: sz(5),
+    marginTop: 5,
     flexDirection: 'row',
   },
   time: {
-    lineHeight: sz(14),
-    fontSize: sz(12),
+    lineHeight: 14,
+    fontSize: 12,
     color: '#4E5969',
     opacity: 0.6,
-    marginLeft: sz(6),
+    marginLeft: 6,
   },
   separateLine: {
     borderWidth: thinLine,

@@ -59,27 +59,30 @@ export default class Header extends Component{
 
 const style = StyleSheet.create({
   header: {
-    height: sz(84),
+    height: 84,
+    // overflow:'hidden',
+
   },
   bg: {
     position: 'absolute',
+    width: '100%',
   },
   widgetWrap: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingTop: sz(20),
-    paddingHorizontal: sz(18),
+    // paddingTop: 20,
+    paddingHorizontal: 18,
   },
   buttonPress: {
-    width: sz(29),
-    height: sz(29),
+    width: 29,
+    height: 29,
     justifyContent: 'center',
   },
   logoText: {
     color: '#fff',
-    fontSize: sz(18),
+    fontSize: 18,
     fontWeight: '900',
   }
 

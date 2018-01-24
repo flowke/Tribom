@@ -87,7 +87,7 @@ let absoluteBottom = {
 const S = StyleSheet.create({
   tabBox: {
     ...absoluteBottom,
-    height: sz(71),
+    height: 71,
     justifyContent: 'center',
     alignItems: 'center',
     // backgroundColor: '#fff'
@@ -95,15 +95,15 @@ const S = StyleSheet.create({
 
   barBG: {
     ...absoluteBottom,
-    height: sz(53),
+    height: 53,
     backgroundColor: '#fff',
     flexDirection: 'row',
     justifyContent: 'center',
     ...barShadow,
   },
   addWrapBG:{
-    width: sz(71),
-    height: sz(71),
+    width: 71,
+    height: 71,
     borderRadius: 71/2,
     alignSelf: 'flex-end',
     backgroundColor: '#fff',
@@ -111,13 +111,13 @@ const S = StyleSheet.create({
   },
 
   postButton:{
-    width: sz(81),
-    height: sz(81),
+    width: 81,
+    height: 81,
   },
 
   barWrap: {
     ...absoluteBottom,
-    height: sz(53),
+    height: 53,
     backgroundColor: '#fff',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -128,7 +128,7 @@ const S = StyleSheet.create({
   },
   icon: {
     // flex:1,
-    width: sz(66),
+    width: 66,
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
@@ -139,7 +139,7 @@ const S = StyleSheet.create({
   },
   iconText: {
     height: 21,
-    fontSize: sz(10),
+    fontSize: 10,
     color: '#4E5969'
   }
 

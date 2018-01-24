@@ -57,20 +57,20 @@ function Topic({source}){
 
 const S = StyleSheet.create({
   hotTopicBox: {
-    height: sz(72),
+    height: 72,
     overflow: 'visible',
-    marginLeft: sz(18),
-    marginTop: sz(22),
-    // marginBottom: sz(18)
+    marginLeft: 18,
+    marginTop: 22,
+    // marginBottom: 18
   },
 
   topicBox: {
-    width: sz(153),
-    height: sz(72),
+    width: 153,
+    height: 72,
 
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: sz(14)
+    marginRight: 14
   },
   flatList: {
     overflow: 'visible',
