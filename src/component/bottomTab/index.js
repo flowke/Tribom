@@ -5,11 +5,14 @@ import {
   Text,
   StyleSheet,
   Image,
+  TabBarIOS,
   ImageBackground,
   TouchableWithoutFeedback
 } from 'react-native';
 
 import {getSize as sz, screenWidth} from '../../common/utils/sizeUtils';
+
+let {Item: TabItem} = TabBarIOS;
 
 export default class BottonTab extends Component{
   constructor(props){
@@ -19,18 +22,20 @@ export default class BottonTab extends Component{
   render(){
     return (
       <View style={S.tabBox}>
-
+        {/* tabs bg */}
         <View style={S.barBG}>
           <View style={S.addWrapBG}/>
         </View>
 
-        <View style={S.barWrap}>
+        <View
+          style={S.barWrap}
+        >
+
           <View style={S.icons}>
             <View style={S.icon}>
               <View style={S.iconPicWrap}>
                 <Image source={require('./img/home_normal.png')}/>
               </View>
-
               <Text style={S.iconText}>Home</Text>
             </View>
             <View style={S.icon}>
@@ -39,14 +44,13 @@ export default class BottonTab extends Component{
               </View>
               <Text style={S.iconText}>Notifications</Text>
             </View>
-
           </View>
+
           <View style={S.icons}>
             <View style={S.icon}>
               <View style={S.iconPicWrap}>
                 <Image source={require('./img/setting_normal.png')}/>
               </View>
-
               <Text style={S.iconText}>Settings</Text>
             </View>
             <View style={S.icon}>
@@ -56,8 +60,8 @@ export default class BottonTab extends Component{
               <Text style={S.iconText}>Profile</Text>
             </View>
           </View>
-        </View>
 
+        </View>
 
         <TouchableWithoutFeedback>
           <Image
@@ -92,7 +96,6 @@ const S = StyleSheet.create({
     alignItems: 'center',
     // backgroundColor: '#fff'
   },
-
   barBG: {
     ...absoluteBottom,
     height: 53,
@@ -121,6 +124,7 @@ const S = StyleSheet.create({
     backgroundColor: '#fff',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    // borderTopWidth: 0
   },
 
   icons: {
@@ -142,7 +146,4 @@ const S = StyleSheet.create({
     fontSize: 10,
     color: '#4E5969'
   }
-
-
-
 });

@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
-  ScrollView
+  ScrollView,
+  RefreshControl,
+  StyleSheet,
 } from 'react-native';
 
 import {Story, HotTopics, CardsList} from './components';
@@ -14,7 +16,14 @@ export default class Home extends Component{
 
   render(){
     return (
-      <ScrollView style={{flex:1}}>
+      <ScrollView
+        style={{flex:1}}
+        refreshControl={
+          <RefreshControl
+            refreshing={false}
+          />
+        }
+      >
         <Story></Story>
         <HotTopics></HotTopics>
         <CardsList></CardsList>
@@ -22,3 +31,7 @@ export default class Home extends Component{
     )
   }
 }
+
+const S = StyleSheet.create({
+
+})

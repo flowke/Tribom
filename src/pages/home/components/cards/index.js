@@ -17,6 +17,9 @@ export default class CardsList extends Component{
     return (
       <View style={S.cardsList}>
         <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
       </View>
 
     )
@@ -51,9 +54,29 @@ function Card(props){
         </View>
       </View>
 
-      {/* separateLine */}
+      {/* post textContent */}
+      <Text style={S.textContent}>{props.textContent}</Text>
 
+      {/* separateLine */}
       <View style={S.separateLine}></View>
+
+      {/* subInfo */}
+      <View style={S.subInfo}>
+        <View style={S.subInfoItem}>
+          <Image
+            style={S.subInfoItemIcon}
+            source={require('./img/Likes.png')}
+          />
+          <Text style={S.subInfoItemText}>{392} Likes</Text>
+        </View>
+        <View style={S.subInfoItem}>
+          <Image
+            style={S.subInfoItemIcon}
+            source={require('./img/Comments.png')}
+          />
+          <Text style={S.subInfoItemText}>{392} Comments</Text>
+        </View>
+      </View>
 
     </View>
   )
@@ -75,7 +98,8 @@ const S = StyleSheet.create({
   },
 
   cardBox: {
-    height: 100,
+    // height: 100,
+    marginBottom: 16,
     paddingTop: 16,
     paddingRight: 16,
     paddingBottom: 14,
@@ -126,9 +150,41 @@ const S = StyleSheet.create({
     opacity: 0.6,
     marginLeft: 6,
   },
+  textContent: {
+    color: '#4E5969',
+    fontSize: 14,
+    marginTop: 13,
+    lineHeight: 22,
+  },
+  postPhotoBox:{
+    marginTop: 13,
+
+  },
+  postPhoto: {
+    borderRadius: 4,
+  },
   separateLine: {
     borderWidth: thinLine,
     borderColor: '#979797',
-    opacity: 0.15
+    opacity: 0.15,
+    marginVertical: 12,
+  },
+  subInfo: {
+    height: 14,
+    flexDirection: 'row',
+
+  },
+  subInfoItem: {
+    marginRight: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  subInfoItemIcon: {
+    marginRight: 8
+  },
+  subInfoItemText: {
+    fontSize: 12,
+    color: '#4E5969'
+    // lineHeight: 14
   }
 })
